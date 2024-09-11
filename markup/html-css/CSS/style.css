@@ -16,7 +16,7 @@ h1,h2,h3,h4,h5,h6,p,span,button{
 }
 
 a{
-    color:inherit; 
+    color:inherit;
     /* 文字の下の線を消す */
     text-decoration:none;   
 }
@@ -25,4 +25,58 @@ body{
     color:#555;
     margin:0;
     line-height:1.6;
+}
+/* header */
+header{
+    /*　子要素を横並びに　*/
+    display:flex;
+    /* 子要素を親要素の両端へ　*/
+    justify-content:space-between;
+    padding:0 20px;
+    color:#fff;
+    /*　背景色をblackにしてきれいに表示されていたらblackをinheritに変更　*/
+    background-color: black;
+
+} 
+.header-logo{
+    padding: 20px 0;
+    font-weight:bold;
+    font-size: 18px;
+}
+
+.header-nav ul{
+    display:flex;
+    padding:22px 0;
+}
+.header-nav li{
+    margin-left: 55px;
+    font-size: 15px;
+}
+
+footer{
+    height:50px;
+    color:#fff;
+    /*　背景色をblackにしてきれいに表示されていたらblackをinheritに変更　*/
+    background-color: black;
+}
+
+.company-info{
+    text-align: center;
+    font-weight:bold;
+    font-size: 12px;
+    color:#FFF;
+}
+
+/* first-viewのスタイル */
+#first-v{
+    height: 770px; 
+    background-image: url("../img/isizi.jpg");  
+    background-size: cover;
+}
+
+.first-v-wrap{
+    padding: 285px 0 255px;
+    margin: 0 auto;
+    width: 250px;
+    text-align: center;
 }
